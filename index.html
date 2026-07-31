@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clínica Vitalis | Consultas, exames e cuidado preventivo</title>
+    <meta
+      name="description"
+      content="Centro clínico multidisciplinar: clínica geral, cardiologia, pediatria, saúde mental e exames com resultados em 24h. Agende sua consulta online."
+    />
+    <meta property="og:title" content="Clínica Vitalis | Saúde em cada fase da vida" />
+    <meta
+      property="og:description"
+      content="Consultas de 40 minutos, equipe multidisciplinar e exames com resultados digitais em 24 horas."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://clinicavitalis.com.br/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Clínica Vitalis",
+        "description": "Centro clínico multidisciplinar com clínica geral, cardiologia, pediatria, saúde mental, fisioterapia e exames laboratoriais.",
+        "telephone": "+55-11-4000-0000",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. das Palmeiras, 1200 — Sala 304",
+          "addressLocality": "São Paulo",
+          "addressCountry": "BR"
+        },
+        "openingHours": "Mo-Fr 07:00-20:00 Sa 08:00-13:00"
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand">
+          <span class="brand-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="icon"><use href="#i-heart" /></svg>
+          </span>
+          Clínica Vitalis
+        </a>
+
+        <nav class="nav-desktop" aria-label="Navegação principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#equipe">Equipe</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a href="#contato" class="btn btn-hero nav-cta">Agendar consulta</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" class="icon"><use href="#i-menu" /></svg>
+        </button>
+      </div>
+
+      <div class="nav-mobile" id="navMobile" hidden>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn btn-hero">Agendar consulta</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="top" class="hero">
+        <div class="container hero-grid">
+          <div class="reveal">
+            <span class="pill">
+              <svg viewBox="0 0 24 24" class="icon"><use href="#i-shield" /></svg>
+              Cuidado certificado
+            </span>
+            <h1>
+              Saúde que acompanha
+              <span class="accent">cada fase da sua vida</span>
+            </h1>
+            <p class="lead">
+              Consultas, exames e acompanhamento preventivo em um só lugar. Atendimento humano,
+              tecnologia moderna e uma equipe que ouve antes de prescrever.
+            </p>
+            <div class="hero-actions">
+              <a href="#contato" class="btn btn-hero btn-xl">
+                <svg viewBox="0 0 24 24" class="icon"><use href="#i-calendar" /></svg>
+                Agendar consulta
+              </a>
+              <a href="#servicos" class="btn btn-outline btn-xl">Ver especialidades</a>
+            </div>
+            <div class="hero-stats">
+              <div><p class="stat">+12 mil</p><p class="muted">pacientes atendidos</p></div>
+              <div><p class="stat">18 anos</p><p class="muted">de experiência clínica</p></div>
+              <div>
+                <p class="stat stat-inline">
+                  4.9 <svg viewBox="0 0 24 24" class="icon star"><use href="#i-star" /></svg>
+                </p>
+                <p class="muted">avaliação dos pacientes</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media reveal">
+            <div class="hero-img">
+              <img
+                src="assets/hero-clinic.jpg"
+                alt="Médica conversando com paciente em consultório claro e acolhedor"
+                width="1600"
+                height="1104"
+              />
+            </div>
+            <div class="hero-card">
+              <p class="overline">Agenda de hoje</p>
+              <p class="hero-card-title">Vagas disponíveis</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços -->
+      <section id="servicos" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="overline accent">Especialidades</p>
+            <h2>Um centro clínico completo, sem correria entre endereços</h2>
+            <p class="muted">
+              Reunimos especialidades essenciais em um fluxo único de cuidado, do primeiro exame ao
+              acompanhamento de longo prazo.
+            </p>
+          </div>
+          <div class="cards-grid" id="servicesGrid"></div>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section id="sobre" class="section section-soft">
+        <div class="container about-grid">
+          <div class="reveal">
+            <p class="overline accent">Sobre a clínica</p>
+            <h2>Medicina baseada em evidência, com tempo para escutar</h2>
+            <p class="muted">
+              Desde 2008 cuidamos de famílias com um modelo simples: diagnóstico preciso, linguagem
+              clara e um plano de tratamento que caiba na rotina de quem está sendo cuidado.
+            </p>
+            <ul class="check-list" id="aboutPoints"></ul>
+          </div>
+          <div class="stats-grid reveal" id="aboutStats"></div>
+        </div>
+      </section>
+
+      <!-- Equipe -->
+      <section id="equipe" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="overline accent">Equipe</p>
+            <h2>Profissionais que você reconhece pelo nome</h2>
+          </div>
+          <div class="team-grid" id="teamGrid"></div>
+        </div>
+      </section>
+
+      <!-- Depoimentos -->
+      <section id="depoimentos" class="section section-deep">
+        <div class="container">
+          <h2 class="testimonials-title reveal">Quem passa por aqui volta — e indica</h2>
+          <div class="testimonials-grid" id="testimonialsGrid"></div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section section-soft">
+        <div class="container container-narrow">
+          <h2 class="center reveal">Perguntas frequentes</h2>
+          <div class="accordion" id="faqList"></div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="section">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="overline accent">Contato</p>
+            <h2>Agende sua consulta em menos de um minuto</h2>
+            <p class="muted">
+              Preencha o formulário e nossa recepção confirma o horário por WhatsApp ou telefone no
+              mesmo dia útil.
+            </p>
+            <ul class="info-list">
+              <li>
+                <svg viewBox="0 0 24 24" class="icon"><use href="#i-phone" /></svg>
+                (11) 4000-0000
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" class="icon"><use href="#i-mail" /></svg>
+                contato@clinicavitalis.com.br
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" class="icon"><use href="#i-pin" /></svg>
+                Av. das Palmeiras, 1200 — Sala 304, São Paulo
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" class="icon"><use href="#i-clock" /></svg>
+                Seg a sex, 7h às 20h · Sáb, 8h às 13h
+              </li>
+            </ul>
+          </div>
+
+          <form class="card form-card reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Nome completo</label>
+              <input id="name" name="name" type="text" placeholder="Como podemos te chamar?" required />
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">Telefone</label>
+                <input id="phone" name="phone" type="tel" placeholder="(11) 90000-0000" required />
+              </div>
+              <div class="field">
+                <label for="specialty">Especialidade</label>
+                <select id="specialty" name="specialty" required>
+                  <option value="">Selecione</option>
+                  <option>Clínica geral</option>
+                  <option>Cardiologia</option>
+                  <option>Pediatria</option>
+                  <option>Saúde mental</option>
+                  <option>Fisioterapia</option>
+                  <option>Exames laboratoriais</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">Mensagem (opcional)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Conte brevemente o motivo do contato"></textarea>
+            </div>
+            <button type="submit" class="btn btn-hero btn-xl full" id="submitBtn">
+              Solicitar agendamento
+            </button>
+            <p class="fineprint">
+              Ao enviar, você concorda com o contato da nossa equipe. Conteúdo demonstrativo.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <p class="brand">
+            <span class="brand-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="icon"><use href="#i-heart" /></svg>
+            </span>
+            Clínica Vitalis
+          </p>
+          <p class="muted">
+            Centro clínico multidisciplinar dedicado a cuidado preventivo e acompanhamento contínuo.
+          </p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <p class="footer-title">Navegação</p>
+            <ul>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-title">Atendimento</p>
+            <ul>
+              <li>(11) 4000-0000</li>
+              <li>contato@clinicavitalis.com.br</li>
+              <li>Seg a sex, 7h às 20h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        © <span id="year"></span> Clínica Vitalis. Conteúdo demonstrativo para portfólio.
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Sprite de ícones -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <g id="i-heart"><path d="M3.5 12h3l2-4 3 8 2.5-6 1.5 2h4.5" /><path d="M20.8 6.6a5 5 0 0 0-8.8-1.7A5 5 0 0 0 3.2 6.6c0 5 8.8 10.4 8.8 10.4s8.8-5.4 8.8-10.4Z" opacity=".35"/></g>
+        <g id="i-menu"><path d="M4 6h16M4 12h16M4 18h16" /></g>
+        <g id="i-close"><path d="M6 6l12 12M18 6 6 18" /></g>
+        <g id="i-shield"><path d="M12 3l7 3v6c0 4.5-3 7.4-7 9-4-1.6-7-4.5-7-9V6l7-3Z" /><path d="m9 12 2 2 4-4" /></g>
+        <g id="i-calendar"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M8 3v4M16 3v4M3 11h18M9 16l2 2 4-4" /></g>
+        <g id="i-star"><path d="m12 3 2.9 5.9 6.1.9-4.5 4.3 1.1 6.4L12 17.6 6.4 20.5l1.1-6.4L3 9.8l6.1-.9Z" /></g>
+        <g id="i-check"><path d="m5 12 5 5L19 7" /></g>
+        <g id="i-quote"><path d="M9 6c-3 1-4.5 3.5-4.5 7.5V18h5v-6H7c0-2 .7-3.4 2.5-4Zm10 0c-3 1-4.5 3.5-4.5 7.5V18h5v-6H17c0-2 .7-3.4 2.5-4Z" /></g>
+        <g id="i-phone"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z" /></g>
+        <g id="i-mail"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></g>
+        <g id="i-pin"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11Z" /><circle cx="12" cy="10" r="2.5" /></g>
+        <g id="i-clock"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></g>
+        <g id="i-stetho"><path d="M6 4v5a5 5 0 0 0 10 0V4" /><path d="M11 14v2a4 4 0 0 0 8 0v-3" /><circle cx="19" cy="10" r="2" /></g>
+        <g id="i-pulse"><path d="M3 12h4l2-4 3 8 2-4h7" /></g>
+        <g id="i-baby"><circle cx="12" cy="12" r="9" /><path d="M9 10h.01M15 10h.01M9 15c1.5 1.2 4.5 1.2 6 0" /></g>
+        <g id="i-brain"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-1 5.8V16a4 4 0 0 0 4 4h1V4Zm6 0a3 3 0 0 1 3 3 3 3 0 0 1 1 5.8V16a4 4 0 0 1-4 4h-1V4Z" /></g>
+        <g id="i-activity"><path d="M4 18V9M9 18V5M14 18v-7M19 18v-4" /></g>
+        <g id="i-syringe"><path d="m14 4 6 6M17 7 7 17l-3 3M11 7l6 6M9 13l2 2" /></g>
+      </defs>
+    </svg>
+
+    <script src="script.js"></script>
+  </body>
+</html>
